@@ -46,4 +46,16 @@ BuildContext itu semacam “identitas” atau info posisi widget di dalam tree. 
 hot reload itu fitur buat langsung liat perubahan kode tanpa restart penuh aplikasi. dia cuma reload bagian yang berubah dan nyimpen state yang udah ada. jadi cepet banget buat ngetes tampilan.
 sedangkan hot restart itu nge-restart semua aplikasi dari awal, semua state ilang. jadi kayak ngerun ulang aplikasi dari awal banget.
 
+## Tugas 8 ##
+
+1. navigator push digunakan untuk menambahkan halaman baru di atas halaman sebelumnya navigator pushreplacement menggantikan halaman yang sedang dibuka dengan halaman baru di aplikasi ini navigator push digunakan saat pindah dari halaman utama ke halaman tambah produk supaya bisa kembali lagi sementara navigator pushreplacement digunakan di drawer supaya halaman lama tidak menumpuk
+
+2. scaffold appbar dan drawer digunakan untuk membuat struktur halaman yang konsisten scaffold jadi dasar halaman yang punya area appbar body dan drawer appbar untuk menampilkan judul halaman biar konsisten drawer digunakan sebagai navigasi utama antara halaman utama dan halaman tambah produk
+
+3. padding singlechildscrollview dan listview dipakai supaya tampilan form lebih rapi padding ngasih jarak biar elemen tidak menempel di tepi singlechildscrollview dan listview supaya form bisa discroll kalau isinya banyak di aplikasiku listview membungkus semua input form dan padding dipakai biar jarak antar elemen enak dilihat
+
+4. Untuk saat ini halaman utama masih polos namun saya berencana untuk menggunakan tema warna yang sesuai dengan tugas django saya sebelumnya yang berdominan berwarna biru tua, sesuai dengan klub sepakbola Chelsea FC. 
+
+
+
 

@@ -13,6 +13,33 @@ class MenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Chelsea Shop'), centerTitle: true),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
+              child: Text(
+                'Chelsea Shop Menu',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text('Halaman Utama'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.add_box),
+              title: const Text('Tambah Produk'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/add-product');
+              },
+            ),
+          ],
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -55,10 +82,7 @@ class MenuPage extends StatelessWidget {
               icon: const Icon(Icons.add_circle),
               label: const Text('Create Product'),
               onPressed: () {
-                _showSnackBar(
-                  context,
-                  'Kamu telah menekan tombol Create Product',
-                );
+                Navigator.pushNamed(context, '/add-product');
               },
             ),
           ],
